@@ -10,7 +10,8 @@ module.exports = function(config) {
     ],
 
     files: [
-        'integration-test/**/*.spec.js'
+        'integration-test/**/*.spec.js',
+        'src'
     ],
 
     // web server port
