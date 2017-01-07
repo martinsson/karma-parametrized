@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "karma start test/karma.conf.js"
+    "test": "karma start karma.conf.js"
   },
   "dependencies": {},
   "devDependencies": {
