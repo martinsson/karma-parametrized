@@ -1,10 +1,11 @@
 "use strict";
 
 function buildKarmaConf (testFiles, port) {
+    var sourceFiles = ['src']
+    var allSourcesAndSomeTestFiles = sourceFiles.concat(testFiles)
+
     return {
-        files: [
-            'src'
-        ].concat(testFiles),
+        files: allSourcesAndSomeTestFiles,
 
         // web server port
         port: port,
