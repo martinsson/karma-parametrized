@@ -1,33 +1,11 @@
+'use strict';
+
+let buildKarmaConf = require('./buildKarmaConf');
+
 module.exports = function(config) {
-  'use strict';
 
-  config.set({
-    // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: true,
-
-    frameworks: [
-      'jasmine'
-    ],
-
-    files: [
-        'unit-test/**/*.spec.js',
-        'src'
-    ],
-
-    // web server port
-    port: 8080,
-
-    browsers: [
-      'PhantomJS'
-    ],
-
-    // Which plugins to enable
-    plugins: [
-      'karma-phantomjs-launcher',
-      'karma-jasmine'
-    ],
-
-    colors: true
-
-  });
+  var testFiles = 'unit-test/**/*.spec.js'
+  var port = 8080
+  var karmaConfObject = buildKarmaConf(testFiles, port)
+  config.set(karmaConfObject);
 };
