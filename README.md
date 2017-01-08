@@ -26,13 +26,7 @@ config.set({
         'unit-test/**/*.spec.js'
     ],
     
-    frameworks: [
-        'jasmine'
-    ],
-    
-    browsers: [
-        'PhantomJS'
-    ],
+    // lots of other properties
     ...
 })
 
@@ -63,14 +57,9 @@ function buildKarmaConf (testFiles) {
 
     return {
         files: allSourcesAndSomeTestFiles,
-        ...
-        frameworks: [
-            'jasmine'
-        ],
         
-        browsers: [
-            'PhantomJS'
-        ],
+        // lots of other properties
+        ...
     }
 }
 ```
