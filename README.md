@@ -64,7 +64,7 @@ function buildKarmaConf (testFiles) {
 }
 ```
 
-Well you could use a environment variable and an if-statement instead of two *.conf.js files, but as in most of our code we have better alternatives - like composing objects. 
+Well you could use a environment variable and an if-statement instead of two *.conf.js files, but as in most of our code we have better alternatives (requiring less cyclomatic complexity), like what we're doing here - composing objects. 
 
 ## What if my situation is more complicated?
 Compose further using the full power of a programming language (OO, FP). It is unlikely that the limited framework is going to solve the problem very efficiently.
