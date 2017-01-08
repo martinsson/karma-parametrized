@@ -18,7 +18,6 @@ function buildKarmaConf (testFiles, port) {
             'jasmine'
         ],
 
-
         browsers: [
             'PhantomJS'
         ],
